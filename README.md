@@ -54,7 +54,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 # 数据库设计
-找一个电商网站的数据库参考，基本一样
+找一个电商网站的数据库参考，基本一样  
 大致需要的表：用户表、商品表、订单表
 
 用户表：  
