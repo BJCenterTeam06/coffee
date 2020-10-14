@@ -49,3 +49,18 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 ## 查看订单
+
+
+
+# 数据库设计
+找一个电商网站的数据库参考，基本一样
+
+
+
+
+
+
+
+
+
+
