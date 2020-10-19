@@ -86,6 +86,26 @@
          
        </ul>
        </div>
+       <!-- 底部导航 -->
+    <mt-tabbar v-model="tabbar" fixed>
+       <mt-tab-item id="index" class="tabbar_fint">
+         首页
+         <img src="../assets/images/shouye_bianse.png" slot="icon" v-if="tabbar == 'index'">
+         <img src="../assets/images/shouye.png" slot="icon" v-else>
+        </mt-tab-item>
+       <mt-tab-item id="menu" class="tabbar_fint" href="/#/caidan">
+         菜单
+         <img src="../assets/images/caidan_xuanzhong(1).png" slot="icon" v-if="tabbar == 'menu'">
+         <img src="../assets/images/caidan(1).png" slot="icon" v-else>
+         
+        </mt-tab-item>
+        <mt-tab-item id="order" class="tabbar_fint">
+         订单
+         <img src="../assets/images/dingdan_xuanzhong(1).png" slot="icon" v-if="tabbar == 'order'">
+         <img src="../assets/images/dingdan(1).png" slot="icon" v-else>
+         
+        </mt-tab-item>
+     </mt-tabbar>
     </div>
 </template>
 <style scoped>
@@ -173,3 +193,12 @@ ul p{
   margin-top: 18px;
 }
 </style>
+<script>
+export default {
+  data(){
+    return {
+      tabbar:'menu'
+    }
+  }
+}
+</script>

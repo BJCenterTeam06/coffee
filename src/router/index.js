@@ -4,10 +4,16 @@ import Home from '../pages/home.vue'
 import Register from '../pages/zhu.vue'
 import Login from '../pages/dengl.vue'
 import Caidan from '../pages/Caidan.vue'
+import Addr from '../pages/addr.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path:'/addr',
+    name:'Addr',
+    component:Addr
+  },
   {
     path:'/caidan',
     name:'Caidan',

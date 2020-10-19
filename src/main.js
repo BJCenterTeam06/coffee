@@ -4,10 +4,13 @@ import router from './router'
 import store from './store'
 import MintUI from 'mint-ui'
 import axios from 'axios'
+import Cube from 'cube-ui'
 import qs from 'qs'
 import 'mint-ui/lib/style.min.css'
 
+
 Vue.use(MintUI)
+Vue.use(Cube)
 
 axios.defaults.baseURL = 'http://127.0.0.1:3000'
 Vue.prototype.axios = axios;
