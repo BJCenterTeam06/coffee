@@ -1,94 +1,89 @@
 <template>
     <div>
       <div id="f1">
-       <img src="../assets/images/caidan_icon_beijing.png" alt="" class="img1">
-       <div class="img2">
-       <img src="../assets/images/icon_weizhi _fen.png" alt="" >品咖啡望京店 <img src="../assets/images/arrow-right.png" alt="">
-       </div>
-       <img src="../assets/images/003.png" alt="" class="img3">
-       </div>
-       <div id='d1'>
-       <ul class="u1" style="list-style: none;">
-         <li>咖啡</li>
-         <li>热饮</li>
-         <li>果饮</li>
-         <li>沙拉</li>
-         <li>商务餐</li>
-         <li>面食</li>
-         <li>面包/帕尼尼</li>
-         <li>汤</li>
-         <li>小吃</li>
-         <li>商务餐</li>
-         <li>面食</li>
-         <li>面包/帕尼尼</li>
-         <li>汤</li>
-         <li>小吃</li>
-         <li>汤</li>
-         <li>小吃</li>
-         <li>商务餐</li>
-         <li>面食</li>
-         <li>面包/帕尼尼</li>
-         <li>汤</li>
-         <li>小吃</li>
-       </ul>
-       <ul class="u2">
-         <li>
-           <ul>
-             <p class="p1">咖啡/16</p>
-             <p class="p2">Coffee</p>
-             <li class="p3">
-               <img src="../assets/images/1.png" alt="">
-               <div>
-                 <p class="p4">玫瑰冰美</p>
-                 <p class="p5">Rose Ice Americano</p>
-                 <p class="p6">￥28</p>
-               </div>
-               <img src="../assets/images/icon_tianjia.png" alt="" class="img4">
-             </li>
-             <li class="p3">
-               <img src="../assets/images/1.png" alt="">
-               <div>
-                 <p class="p4">玫瑰冰美</p>
-                 <p class="p5">Rose Ice Americano</p>
-                 <p class="p6">￥28</p>
-               </div>
-                <img src="../assets/images/icon_tianjia.png" alt="" class="img4">
-             </li>
-             <li class="p3">
-               <img src="../assets/images/1.png" alt="">
-               <div>
-                 <p class="p4">玫瑰冰美</p>
-                 <p class="p5">Rose Ice Americano</p>
-                 <p class="p6">￥28</p>
-               </div>
-                <img src="../assets/images/icon_tianjia.png" alt="" class="img4">
-             </li>
-             <li class="p3">
-               <img src="../assets/images/1.png" alt="">
-               <div>
-                 <p class="p4">玫瑰冰美</p>
-                 <p class="p5">Rose Ice Americano</p>
-                 <p class="p6">￥28</p>
-               </div>
-                <img src="../assets/images/icon_tianjia.png" alt="" class="img4">
-             </li>
-             <li class="p3">
-               <img src="../assets/images/1.png" alt="">
-               <div>
-                 <p class="p4">玫瑰冰美</p>
-                 <p class="p5">Rose Ice Americano</p>
-                 <p class="p6">￥28</p>
-               </div>
-                <img src="../assets/images/icon_tianjia.png" alt="" class="img4">
-             </li>
-           </ul>
-         </li>
+          <img src="../assets/images/caidan_icon_beijing.png" alt="" class="img1">
+        <div class="img2">
+          <span class="position_img"></span>
+          <span>
+            品咖啡望京店
+          </span>
+          
+        </div>
+          <img src="../assets/images/003.png" alt="" class="img3">
+      </div>
+      <div>
+
+      </div>
+      <div id='d1'>
+          <ul class="u1" style="list-style: none;">
+            <li>咖啡</li>
+            <li>热饮</li>
+            <li>果饮</li>
+            <li>沙拉</li>
+            <li>商务餐</li>
+            <li>面食</li>
+            <li>面包/帕尼尼</li>
+            <li>汤</li>
+            <li>小吃</li>
+          </ul>
+          <ul class="u2">
+            <li>
+              <ul>
+                <p class="p1">咖啡/16</p>
+                <p class="p2">Coffee</p>
+                <li class="p3">
+                  <img src="../assets/images/1.png" alt="">
+                  <div>
+                    <p class="p4">玫瑰冰美</p>
+                    <p class="p5">Rose Ice Americano</p>
+                    <p class="p6">￥28</p>
+                  </div>
+                  <img src="../assets/images/icon_tianjia.png" alt="" class="img4">
+                </li>
+                <li class="p3">
+                  <img src="../assets/images/1.png" alt="">
+                  <div>
+                    <p class="p4">玫瑰冰美</p>
+                    <p class="p5">Rose Ice Americano</p>
+                    <p class="p6">￥28</p>
+                  </div>
+                    <img src="../assets/images/icon_tianjia.png" alt="" class="img4">
+                </li>
+                <li class="p3">
+                  <img src="../assets/images/1.png" alt="">
+                  <div>
+                    <p class="p4">玫瑰冰美</p>
+                    <p class="p5">Rose Ice Americano</p>
+                    <p class="p6">￥28</p>
+                  </div>
+                    <img src="../assets/images/icon_tianjia.png" alt="" class="img4">
+                </li>
+                <li class="p3">
+                  <img src="../assets/images/1.png" alt="">
+                  <div>
+                    <p class="p4">玫瑰冰美</p>
+                    <p class="p5">Rose Ice Americano</p>
+                    <p class="p6">￥28</p>
+                  </div>
+                    <img src="../assets/images/icon_tianjia.png" alt="" class="img4">
+                </li>
+                <li class="p3">
+                  <img src="../assets/images/1.png" alt="">
+                  <div>
+                    <p class="p4">玫瑰冰美</p>
+                    <p class="p5">Rose Ice Americano</p>
+                    <p class="p6">￥28</p>
+                  </div>
+                    <img src="../assets/images/icon_tianjia.png" alt="" class="img4">
+                </li>
+              </ul>
+            </li>
          
-       </ul>
-       </div>
+          </ul>
+      </div>
        <!-- 底部导航 -->
-    <mt-tabbar v-model="tabbar" fixed>
-       <mt-tab-item id="index" class="tabbar_fint">
+      <mt-tabbar v-model="tabbar" fixed>
+       <mt-tab-item id="index" class="tabbar_fint" href="/">
          首页
          <img src="../assets/images/shouye_bianse.png" slot="icon" v-if="tabbar == 'index'">
          <img src="../assets/images/shouye.png" slot="icon" v-else>
@@ -99,16 +94,29 @@
          <img src="../assets/images/caidan(1).png" slot="icon" v-else>
          
         </mt-tab-item>
-        <mt-tab-item id="order" class="tabbar_fint">
+        <mt-tab-item id="order" class="tabbar_fint" href="/#/order">
          订单
          <img src="../assets/images/dingdan_xuanzhong(1).png" slot="icon" v-if="tabbar == 'order'">
          <img src="../assets/images/dingdan(1).png" slot="icon" v-else>
-         
         </mt-tab-item>
-     </mt-tabbar>
+      </mt-tabbar>
     </div>
 </template>
 <style scoped>
+.position_img{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/images/icon_weizhi _fen.png');
+  vertical-align: sub;
+}
+.tabbar_fint{
+  font: 10px 黑体 ;
+  color: #8a8a8a;
+}
+.mint-tabbar>.mint-tab-item.is-selected{
+  color: #904732;
+}
 .p4{
   color: #151515;
   font-size: 16px;
@@ -149,29 +157,30 @@ ul p{
 }
 #d1{
   margin-top: 100px;
+  height: 364px;
   display:flex;
   
 }
 .u1{
   width: 100px;
-  height: 350px;
-  margin-left: 25px;
-  margin-top:130px ;
-  font-size:12px ;
-  color:#666;
-  overflow-y:scroll ;
+    height: 400px;
+    margin-left: 25px;
+    margin-top: 110px;
+    font-size: 12px;
+    color: #666;
+    overflow-y: scroll;
 }
 .u1 li{
   margin: 28px 0;
 }
 .u2{
-  width: 300px;
-  height: 320px;
-  margin-left: 0;
-  margin-top:158px;
-  font-size:12px ;
-  color:#666;
-  overflow-y:scroll ;
+    width: 300px;
+    height: 370px;
+    margin-left: 0;
+    margin-top: 126px;
+    font-size: 12px;
+    color: #666;
+    overflow-y: scroll;
 }
 .img2{
   position: absolute;

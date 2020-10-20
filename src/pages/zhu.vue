@@ -45,16 +45,28 @@
       >
       </mt-field>
 
-      <mt-button type="primary" size="large" @click="handle"
-        >免费注册</mt-button
-      >
+      <div>
+        <mt-button class="button" size="small" @click="handle">
+        免费注册
+        </mt-button>
+      </div>
     </div>
     <!-- 表单区域结束 -->
   </div>
 </template>
 <style scoped>
+.button{
+  background-color: #444;
+  color: azure;
+  margin-top: 20px;
+  margin-left: 145px;
+}
+.mint-header{
+  background-color: #444;
+}
 .shortcut {
   text-decoration: none;
+  font-size: 10px;
 }
 </style>
 <script>

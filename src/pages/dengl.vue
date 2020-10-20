@@ -32,16 +32,26 @@
           @blur.native.capture="checkPassword">
         </mt-field>   
 
-
-        <mt-button type="primary" size="large" @click="handle">用户登录</mt-button>    
-        <mt-button type="primary" size="large" @click="handle">管理员登录</mt-button>
+        <div style="width:220px;    margin: 0 auto;">
+          <mt-button class="button" style="width:94px;margin-right:20px" size="small" @click="handle">用户登录</mt-button>    
+          <mt-button class="button" size="small" @click="handle">管理员登录</mt-button>
+        </div>
     </div>
     <!-- 表单区域结束 -->
   </div>
 </template>
 <style scoped>
+.button{
+  background-color: #444;
+  color: azure;
+  margin-top: 20px;
+}
+.mint-header{
+  background-color: #444;
+}
 .shortcut{
   text-decoration: none;  
+  font-size: 10px;
 }
 </style>
 <script>

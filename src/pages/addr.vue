@@ -6,7 +6,6 @@
       </router-link>
       <span id="s1">品咖啡cafe</span>
     </div>
-
     <div id="addr">
       <div id="d1">
         <span id="s1">品咖啡望京店</span>
@@ -16,7 +15,6 @@
         <span id="s3"><img src="../assets/images/icon_weizhi.png" alt="">望京东园七区8号楼8-1(保利好食界)</span>
       </div>
       <div id="d3">
-        
         <span id="s4">
           <router-link to="/menu">立即下单</router-link>
         </span>
@@ -47,17 +45,15 @@
 </template>
 <style scoped>
 #head{
+  width: 352px;
   text-align: left;
-  margin-left: 12.5px;
   font-family: "Microsoft YaHei",微软雅黑;
   color: #000;
   font-size: 19px;
-  margin-bottom: 15px;
+  margin: 15px auto;
 }
 #s1{
-  
   margin-left: 15px;
-  
 }
 #s2{
   margin-right: 15px;

@@ -5,10 +5,22 @@ import Register from '../pages/zhu.vue'
 import Login from '../pages/dengl.vue'
 import Caidan from '../pages/Caidan.vue'
 import Addr from '../pages/addr.vue'
+import Cubeui from '../pages/cubeui.vue'
+import Order from '../pages/order.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path:'/order',
+    name:'Order',
+    component:Order
+  },
+  {
+    path:'/cubeui',
+    name:'Cubeui',
+    component:Cubeui
+  },
   {
     path:'/addr',
     name:'Addr',

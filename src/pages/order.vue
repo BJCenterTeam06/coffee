@@ -1,89 +1,81 @@
 <template>
   <div>
     <div id="dingdan_photo">
-      <span id="s1">PinCafe</span>
+      <div id="s1">PinCafe</div>
     </div>
-    <div id="order">
-      <span class="s" id="s2">全部</span>
-      <span class="s" id="s3">未完成</span>
-      <span class="s" id="s4">已完成</span>
-    
-    
-   
-    <mt-tabbar v-model="tabbar" fixed>
-       <mt-tab-item id="index">
-         
-         <img src="../assets/images/icon_shouye_2.png" slot="icon" >
-         <!-- 缺选中时图片<img src="../assets/images/icon_shouye_2.png" slot="icon" > -->
+    <div id="order" >
+      <mt-navbar  class="mt-navbar" v-model="active" fixed>
+        <mt-tab-item id="1">
+          全部
+        </mt-tab-item>
+        <mt-tab-item id="2">
+          未完成
+        </mt-tab-item>
+        <mt-tab-item id="3">
+          已完成
+        </mt-tab-item>
+      </mt-navbar>
+    </div>
+      <mt-tabbar v-model="tabbar" fixed>
+       <mt-tab-item id="index" class="tabbar_fint" href="/">
          首页
+         <img src="../assets/images/shouye_bianse.png" slot="icon" v-if="tabbar == 'index'">
+         <img src="../assets/images/shouye.png" slot="icon" v-else>
         </mt-tab-item>
-       <mt-tab-item id="menu">
-         
-         <img src="../assets/images/icon_caidan_1.png" slot="icon" >
-         <!-- 缺选中时图片 <img src="../assets/images/icon_caidan_1.png" slot="icon" > -->
+       <mt-tab-item id="menu" class="tabbar_fint" href="/#/caidan">
          菜单
-        </mt-tab-item>
-        <mt-tab-item id="order">
+         <img src="../assets/images/caidan_xuanzhong(1).png" slot="icon" v-if="tabbar == 'menu'">
+         <img src="../assets/images/caidan(1).png" slot="icon" v-else>
          
-         <img src="../assets/images/icon_dingdan_1.png" slot="icon" >
-         <!-- 缺选中时图片 <img src="../assets/images/icon_dingdan_1.png" slot="icon" > -->
-         订单   
         </mt-tab-item>
-     </mt-tabbar>
-    
-     </div>
+        <mt-tab-item id="order" class="tabbar_fint" href="/#/order">
+         订单
+         <img src="../assets/images/dingdan_xuanzhong(1).png" slot="icon" v-if="tabbar == 'order'">
+         <img src="../assets/images/dingdan(1).png" slot="icon" v-else>
+        </mt-tab-item>
+      </mt-tabbar>
   </div>
 </template>
 <style scoped>
-
+.mint-navbar .mint-tab-item.is-selected{
+  color:#904732;
+  border-bottom: 1px solid #904732;
+  margin-bottom: 0px;
+}
+.tabbar_fint{
+  font: 10px 黑体 ;
+  color: #8a8a8a;
+}
+.mint-tabbar>.mint-tab-item.is-selected{
+  color: #904732;
+}
+.mt-navbar{
+  margin-top: 200px;
+  border-radius: 40px;
+  font-family: 黑体;
+}
 #dingdan_photo{
-  position: absolute;
   margin: 0 auto;
-  width: 359px;height: 243px;
+  width: 100%;
+  height: 243px;
   background-image: url(../assets/images/dingdan_photo.png);
 }
 #order{
-  width: 359px;
+  width: 375px;
   height: 474px;
   position: absolute;
   top: 193px;
-  z-index: 50;
   background-color: white;
-  border-radius: 40pt 0pt 0pt 0pt;
+  border-radius: 40px 0pt 0pt 0pt;
 }
 #s1{
-  font-family: "Microsoft YaHei",微软雅黑;
-  color: #000;
-  font-size: 19px;
-  margin-bottom: 15px;
-  display: inline-block;
-  margin-top: 29px;
-}
-.s{
-  position: absolute;
- 
-  
-  font-size: 16pt;
-  
-}
-#s2{
-  top: 28px;
-  left: 25px;
-  border-bottom: #904732 2px solid;
+  font-family:黑体;
   color: #904732;
-  border-radius: 1px;
-  padding-bottom:5px ;
-  
-}
-#s3{
-  color: grey;
- left: 100pt; 
-  top: 28px;
-}
-#s4{
-  color: grey;
-  left: 250px;
-   top: 28px;
+  font-size: 20px;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 72px;
+  height: 26px;
 }
   
 </style>
@@ -91,7 +83,8 @@
 export default {
   data(){
     return{
-      tabbar:"order"
+      tabbar:"order",
+      active:'1'
     }
   },
   watch:{
@@ -100,12 +93,11 @@ export default {
         this.$router.push('/').catch(e=>{});
       }
       if(val == 'menu'){
-        this.$router.push('/menu').catch(e=>{});
+        this.$router.push('/caidan').catch(e=>{});
       }
       if(val == 'order'){
         this.$router.push('/order').catch(e=>{});
       }
-
     }
 
   }

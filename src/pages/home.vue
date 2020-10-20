@@ -49,7 +49,7 @@
          <img src="../assets/images/caidan(1).png" slot="icon" v-else>
          
         </mt-tab-item>
-        <mt-tab-item id="order" class="tabbar_fint">
+        <mt-tab-item id="order" class="tabbar_fint" href="/#/order">
          订单
          <img src="../assets/images/dingdan_xuanzhong(1).png" slot="icon" v-if="tabbar == 'order'">
          <img src="../assets/images/dingdan(1).png" slot="icon" v-else>
@@ -59,6 +59,9 @@
   </div>
 </template>
 <style scoped>
+.mint-header{
+  background-color: #444;
+}
 .mint-tabbar>.mint-tab-item.is-selected{
   color: #904732;
 }
@@ -100,7 +103,7 @@
     font-family: "Microsoft YaHei",微软雅黑;
   }
   #s3{
-    font-size: 14px;
+    font-size: 10px;
     font-family: "Microsoft YaHei",微软雅黑;
   }
  #swipe{
